@@ -1,10 +1,23 @@
 {
   "compilerOptions": {
-    // ...
+    "target": "ESNext", 
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
     "baseUrl": ".",
+    "types": [ "node"],
     "paths": {
-      "@/*": ["./src/*"]
-    }
-    // ...
-  }
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "src/**/*.vue", "src/__tests__/**/*.ts", "src/__tests__/**/*.tsx",  "./db/**/*",
+  "./src/**/*"],
+  "exclude": ["node_modules", "dist", "lib", "lib-amd"]
 }
