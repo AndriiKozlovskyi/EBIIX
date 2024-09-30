@@ -1,4 +1,11 @@
+import { useToast } from 'primevue/usetoast';
 const { defineProps, defineSlots, defineEmits, defineExpose, defineModel, defineOptions, withDefaults, } = await import('vue');
+const toast = useToast();
+const phoneNumber = '+48 575 525 279';
+const copyPhoneNumber = async () => {
+    await navigator.clipboard.writeText(phoneNumber);
+    toast.add({ severity: 'success', summary: 'success', detail: "You've succesfully copied the number", life: 3000 });
+};
 const __VLS_fnComponent = (await import('vue')).defineComponent({});
 ;
 let __VLS_functionalComponentProps;
@@ -20,6 +27,12 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.body, __VLS_intrinsicElements.body)({ ...{ class: ("flex flex-col") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col justify-center px-6") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("relative w-full h-auto md:h-screen bg-cover bg-center") }, ...{ style: ({}) }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col space-y-2 justify-center px-6 bg-white/90 p-4") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("font-semibold text-3xl") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({});
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({});
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({});
+    __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({});
     __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-gray-700/80 text-white") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col w-full text-black z-100 relative bg-white/70 p-4") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col md:flex-row md:space-x-10 space-y-4 md:space-y-0") }, });
@@ -74,6 +87,8 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.hr, __VLS_intrinsicElements.hr)({});
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-gray-700 text-sm md:text-base") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-gray-700 text-sm md:text-base") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex items-center justify-center w-full order-1 mt-4") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({ ...{ onClick: (__VLS_ctx.copyPhoneNumber) }, ...{ class: ("bg-[#ed9121]/80 text-white rounded-lg px-10 py-1 my-1 text-lg md:text-xl hover:bg-[#ed9121]/100") }, });
     __VLS_styleScopedClasses['flex'];
     __VLS_styleScopedClasses['flex-col'];
     __VLS_styleScopedClasses['flex'];
@@ -87,6 +102,15 @@ function __VLS_template() {
     __VLS_styleScopedClasses['bg-cover'];
     __VLS_styleScopedClasses['bg-center'];
     __VLS_styleScopedClasses['flex'];
+    __VLS_styleScopedClasses['flex-col'];
+    __VLS_styleScopedClasses['space-y-2'];
+    __VLS_styleScopedClasses['justify-center'];
+    __VLS_styleScopedClasses['px-6'];
+    __VLS_styleScopedClasses['bg-white/90'];
+    __VLS_styleScopedClasses['p-4'];
+    __VLS_styleScopedClasses['font-semibold'];
+    __VLS_styleScopedClasses['text-3xl'];
+    __VLS_styleScopedClasses['flex'];
     __VLS_styleScopedClasses['justify-center'];
     __VLS_styleScopedClasses['p-4'];
     __VLS_styleScopedClasses['items-center'];
@@ -312,6 +336,21 @@ function __VLS_template() {
     __VLS_styleScopedClasses['text-gray-700'];
     __VLS_styleScopedClasses['text-sm'];
     __VLS_styleScopedClasses['md:text-base'];
+    __VLS_styleScopedClasses['flex'];
+    __VLS_styleScopedClasses['items-center'];
+    __VLS_styleScopedClasses['justify-center'];
+    __VLS_styleScopedClasses['w-full'];
+    __VLS_styleScopedClasses['order-1'];
+    __VLS_styleScopedClasses['mt-4'];
+    __VLS_styleScopedClasses['bg-[#ed9121]/80'];
+    __VLS_styleScopedClasses['text-white'];
+    __VLS_styleScopedClasses['rounded-lg'];
+    __VLS_styleScopedClasses['px-10'];
+    __VLS_styleScopedClasses['py-1'];
+    __VLS_styleScopedClasses['my-1'];
+    __VLS_styleScopedClasses['text-lg'];
+    __VLS_styleScopedClasses['md:text-xl'];
+    __VLS_styleScopedClasses['hover:bg-[#ed9121]/100'];
     var __VLS_slots;
     var __VLS_inheritedAttrs;
     const __VLS_refs = {};
@@ -325,7 +364,9 @@ function __VLS_template() {
 ;
 const __VLS_self = (await import('vue')).defineComponent({
     setup() {
-        return {};
+        return {
+            copyPhoneNumber: copyPhoneNumber,
+        };
     },
 });
 export default (await import('vue')).defineComponent({

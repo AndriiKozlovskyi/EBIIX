@@ -1,5 +1,6 @@
 import BodyView from './components/body/BodyView.vue';
 import HeaderView from './components/headers/HeaderView.vue';
+import FooterView from './components/footer/FooterView.vue';
 const { defineProps, defineSlots, defineEmits, defineExpose, defineModel, defineOptions, withDefaults, } = await import('vue');
 const __VLS_fnComponent = (await import('vue')).defineComponent({});
 ;
@@ -31,6 +32,16 @@ function __VLS_template() {
     // @ts-ignore
     const __VLS_5 = __VLS_asFunctionalComponent(BodyView, new BodyView({}));
     const __VLS_6 = __VLS_5({}, ...__VLS_functionalComponentArgsRest(__VLS_5));
+    // @ts-ignore
+    [FooterView,];
+    // @ts-ignore
+    const __VLS_10 = __VLS_asFunctionalComponent(FooterView, new FooterView({}));
+    const __VLS_11 = __VLS_10({}, ...__VLS_functionalComponentArgsRest(__VLS_10));
+    const __VLS_15 = __VLS_resolvedLocalAndGlobalComponents.Toast;
+    /** @type { [typeof __VLS_components.Toast, ] } */
+    // @ts-ignore
+    const __VLS_16 = __VLS_asFunctionalComponent(__VLS_15, new __VLS_15({}));
+    const __VLS_17 = __VLS_16({}, ...__VLS_functionalComponentArgsRest(__VLS_16));
     var __VLS_slots;
     var __VLS_inheritedAttrs;
     const __VLS_refs = {};
@@ -47,6 +58,7 @@ const __VLS_self = (await import('vue')).defineComponent({
         return {
             BodyView: BodyView,
             HeaderView: HeaderView,
+            FooterView: FooterView,
         };
     },
 });

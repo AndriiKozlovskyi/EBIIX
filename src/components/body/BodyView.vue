@@ -4,7 +4,13 @@
         
         <div class="relative w-full h-auto md:h-screen bg-cover bg-center" 
             style="background-image: url('https://hips.hearstapps.com/hmg-prod/images/beginner-bikes-73-preview-maxwidth-3000-maxheight-3000-ppi-300-quality-90-1606349138.jpg');">
-            
+            <div class="flex flex-col space-y-2 justify-center px-6 bg-white/90 p-4">
+            <h1 class="font-semibold text-3xl">E-Bike Serwis uslugi rowerowe</h1>
+            <p>- Najniższe ceny na wynajem.</p>
+            <p>- Wysokowydajne rowery elektryczne.</p>
+            <p>- Wygodne opcje rezerwacji szybko.</p>
+            <p>- Idealne dla kurierów pracujących.</p>
+        </div>
             <!-- Title Section -->
             <h1 class="flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-gray-700/80 text-white">
                 Usługi, które oferujemy
@@ -96,10 +102,27 @@
                         </div>       
                     </span>
                 </div>
+                <div class="flex items-center justify-center w-full order-1 mt-4">            
+                    <button @click="copyPhoneNumber" class="bg-[#ed9121]/80 text-white rounded-lg px-10 py-1 my-1 text-lg md:text-xl hover:bg-[#ed9121]/100">
+                        Dzwon teraz!
+                    </button>
+                </div>  
             </div>
         </div>
     </body>
 </template>
 
 <script setup lang="ts">
+import { useToast } from 'primevue/usetoast';
+
+const toast = useToast();
+
+const phoneNumber = '+48 575 525 279';
+
+const copyPhoneNumber = async () => {
+    await navigator.clipboard.writeText(phoneNumber);
+
+    toast.add({ severity: 'success', summary: 'success', detail: "You've succesfully copied the number", life: 3000 })
+
+};
 </script>
