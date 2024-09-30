@@ -49,7 +49,7 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({ ...{ class: ("absolute left-0 top-0 h-2 w-2 rounded-full bg-[#ed9121] mt-1") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex items-center justify-center w-full mt-4 mb-10") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.button, __VLS_intrinsicElements.button)({ ...{ onClick: (__VLS_ctx.copyPhoneNumber) }, ...{ class: ("bg-[#ed9121] text-white rounded-lg px-10 py-1 my-1 text-lg md:text-xl hover:bg-[#ed9121]/100") }, });
-    __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-black text-white") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("flex justify-center p-4 items-center text-2xl md:text-2xl font-bold mt-4 text-black") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col md:flex-row") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({ ...{ class: ("flex flex-col md:flex-row items-center rounded-xl m-4 p-4 bg-white shadow-md flex-grow") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.img)({ src: ("../../assets/icons/naprawa1.png"), ...{ class: ("w-16 h-16 md:w-24 md:h-24") }, });
@@ -78,7 +78,7 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.hr, __VLS_intrinsicElements.hr)({});
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-gray-700 text-sm md:text-base") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.strong, __VLS_intrinsicElements.strong)({});
-    __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-black text-white") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.h1, __VLS_intrinsicElements.h1)({ ...{ class: ("flex justify-center p-4 items-center text-2xl md:text-2xl font-bold text-black") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col w-full text-black z-100 relative bg-white/70 p-4") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col md:flex-row md:space-x-10 justify-between space-y-4 md:space-y-0") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.span, __VLS_intrinsicElements.span)({ ...{ class: ("flex flex-col md:flex-row items-center rounded-xl p-4 bg-white shadow-md") }, });
@@ -86,6 +86,7 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col space-y-3 ml-0 md:ml-4 mt-4 md:mt-0") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-row justify-between w-full") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.h2, __VLS_intrinsicElements.h2)({ ...{ class: ("text-lg md:text-xl font-bold") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.br, __VLS_intrinsicElements.br)({});
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-lg md:text-xl") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-gray-700 text-sm md:text-base") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.hr, __VLS_intrinsicElements.hr)({});
@@ -233,11 +234,11 @@ function __VLS_template() {
     __VLS_styleScopedClasses['justify-center'];
     __VLS_styleScopedClasses['p-4'];
     __VLS_styleScopedClasses['items-center'];
-    __VLS_styleScopedClasses['text-xl'];
+    __VLS_styleScopedClasses['text-2xl'];
     __VLS_styleScopedClasses['md:text-2xl'];
-    __VLS_styleScopedClasses['font-medium'];
-    __VLS_styleScopedClasses['bg-black'];
-    __VLS_styleScopedClasses['text-white'];
+    __VLS_styleScopedClasses['font-bold'];
+    __VLS_styleScopedClasses['mt-4'];
+    __VLS_styleScopedClasses['text-black'];
     __VLS_styleScopedClasses['flex'];
     __VLS_styleScopedClasses['flex-col'];
     __VLS_styleScopedClasses['md:flex-row'];
@@ -352,11 +353,10 @@ function __VLS_template() {
     __VLS_styleScopedClasses['justify-center'];
     __VLS_styleScopedClasses['p-4'];
     __VLS_styleScopedClasses['items-center'];
-    __VLS_styleScopedClasses['text-xl'];
+    __VLS_styleScopedClasses['text-2xl'];
     __VLS_styleScopedClasses['md:text-2xl'];
-    __VLS_styleScopedClasses['font-medium'];
-    __VLS_styleScopedClasses['bg-black'];
-    __VLS_styleScopedClasses['text-white'];
+    __VLS_styleScopedClasses['font-bold'];
+    __VLS_styleScopedClasses['text-black'];
     __VLS_styleScopedClasses['flex'];
     __VLS_styleScopedClasses['flex-col'];
     __VLS_styleScopedClasses['w-full'];

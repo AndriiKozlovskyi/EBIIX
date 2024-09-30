@@ -53,7 +53,7 @@
                 </div>  
                 </div>
                 </div>
-                    <h1 class="flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-black text-white">
+                    <h1 class="flex justify-center p-4 items-center text-2xl md:text-2xl font-bold mt-4 text-black">
                         Usługi, które oferujemy
                     </h1>
                     <!-- Naprawa Service -->
@@ -101,7 +101,7 @@
             </div>
             
             <!-- Selling Section Title -->
-            <h1 class="flex justify-center p-4 items-center text-xl md:text-2xl font-medium bg-black text-white">
+            <h1 class="flex justify-center p-4 items-center text-2xl md:text-2xl font-bold text-black">
                 Sprzedajemy
             </h1>
             
@@ -114,7 +114,7 @@
                         <img src="../../assets/icons/battery.png" class="w-16 h-16 md:w-24 md:h-24"/>
                         <div class="flex flex-col space-y-3 ml-0 md:ml-4 mt-4 md:mt-0">
                             <div class="flex flex-row justify-between w-full">
-                                <h2 class="text-lg md:text-xl font-bold">Akumulatory na zamówienie</h2>
+                                <h2 class="text-lg md:text-xl font-bold">Akumulatory<br> na zamówienie</h2>
                                 <p class="text-lg md:text-xl">od 750zl</p>
                             </div>
                             <p class="text-gray-700 text-sm md:text-base">Zamów akumulatory dostosowane do mocy Twojego roweru.</p>
