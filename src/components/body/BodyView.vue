@@ -125,7 +125,7 @@
                 </div>
                 <div class="flex items-center justify-center w-full order-1 mt-4">            
                     <button @click="copyPhoneNumber" class="bg-[#ed9121]/80 text-white rounded-lg px-10 py-1 my-1 text-lg md:text-xl hover:bg-[#ed9121]/100">
-                        Dzwon teraz!
+                        Dzwoń teraz!
                     </button>
                 </div>  
             </div>
