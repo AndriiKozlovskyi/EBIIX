@@ -4,7 +4,7 @@
         <!-- Address Section (Middle) -->
         <div class="flex items-center justify-center space-x-3 w-full">
                 <i class="fas fa-map-marker-alt"></i>
-                <p class="text-base md:text-lg">Jana Żiżki 2, Wroclaw, 50-203</p>
+                <p class="text-base md:text-lg">Jana Żiżki 2, Wrocław, 50-203</p>
             </div>
 
             <!-- Contact Section (Phone, Right) -->
