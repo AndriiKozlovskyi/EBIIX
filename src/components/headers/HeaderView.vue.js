@@ -17,7 +17,7 @@ function __VLS_template() {
     let __VLS_directives;
     let __VLS_styleScopedClasses;
     let __VLS_resolvedLocalAndGlobalComponents;
-    __VLS_elementAsFunction(__VLS_intrinsicElements.nav, __VLS_intrinsicElements.nav)({ ...{ class: ("z-1000 flex flex-col md:flex-row md:justify-between items-center bg-[#ed9121]/80 w-full px-4 py-2 text-white shadow-md space-y-4 md:space-y-0") }, });
+    __VLS_elementAsFunction(__VLS_intrinsicElements.nav, __VLS_intrinsicElements.nav)({ ...{ class: ("z-1000 flex flex-col md:flex-row md:justify-between items-center bg-black w-full px-4 py-2 text-white space-y-4 md:space-y-0") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col items-start w-full md:w-1/3 md:justify-start order-1 md:order-1") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-lg font-semibold") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-sm text-slate-200") }, });
@@ -27,12 +27,11 @@ function __VLS_template() {
     __VLS_styleScopedClasses['md:flex-row'];
     __VLS_styleScopedClasses['md:justify-between'];
     __VLS_styleScopedClasses['items-center'];
-    __VLS_styleScopedClasses['bg-[#ed9121]/80'];
+    __VLS_styleScopedClasses['bg-black'];
     __VLS_styleScopedClasses['w-full'];
     __VLS_styleScopedClasses['px-4'];
     __VLS_styleScopedClasses['py-2'];
     __VLS_styleScopedClasses['text-white'];
-    __VLS_styleScopedClasses['shadow-md'];
     __VLS_styleScopedClasses['space-y-4'];
     __VLS_styleScopedClasses['md:space-y-0'];
     __VLS_styleScopedClasses['flex'];
