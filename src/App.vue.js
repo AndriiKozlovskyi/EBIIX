@@ -21,6 +21,7 @@ function __VLS_template() {
     // CSS variable injection 
     // CSS variable injection end 
     let __VLS_resolvedLocalAndGlobalComponents;
+    __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("relative flex flex-col") }, });
     // @ts-ignore
     [BodyView,];
     // @ts-ignore
@@ -36,6 +37,9 @@ function __VLS_template() {
     // @ts-ignore
     const __VLS_11 = __VLS_asFunctionalComponent(__VLS_10, new __VLS_10({}));
     const __VLS_12 = __VLS_11({}, ...__VLS_functionalComponentArgsRest(__VLS_11));
+    __VLS_styleScopedClasses['relative'];
+    __VLS_styleScopedClasses['flex'];
+    __VLS_styleScopedClasses['flex-col'];
     var __VLS_slots;
     var __VLS_inheritedAttrs;
     const __VLS_refs = {};

@@ -2,10 +2,10 @@
     <body class="flex flex-col">
         <div class="flex flex-col justify-center px-6"></div>
         
-        <div class="relative w-full h-auto md:h-screen bg-cover bg-center">
+        <div class="w-full bg-cover bg-[#e6e1e1] bg-center">
             <!-- Title Section -->
             <!-- Services Section -->
-            <div class="relative flex flex-col w-full text-black z-100  bg-white/70">
+            <div class="relative flex flex-col w-full text-black z-100 bg-white/70">
                 <div class="flex relative flex-col"> 
                     
                 <div class="flex flex-col h-[40rem] "
@@ -15,13 +15,13 @@
                     background-repeat: no-repeat;">
                 <div class="bg-black/80 text-white">
                     <div class="flex flex-col items-center w-full p-6">
-                        <p class="text-xl font-bold">Ebiix Serwis Rowerowy</p>
-                        <p class="text-sm text-slate-200">E-Bike Fix</p>
+                        <p class="text-xl font-bold">{{name}} Serwis Rowerowy</p>
+                        <p class="text-sm text-slate-200">Naprawa i sprzedaz Rowerow</p>
                     </div>
                     <span class="flex flex-col md:flex-row rounded-xl items-center p-4 m-4 md:w-1/3 shadow-md flex-grow">
                         <div class="flex flex-col space-y-3 w-full">
-                            <div class="flex flex-col items-center w-full">
-                                <h2 class="text-lg md:text-xl text-center font-bold mb-4">Umów się na serwis bez wychodzenia z domu</h2>
+                            <div class="flex flex-col w-full">
+                                <h2 class="text-lg md:text-xl font-bold mb-4">Umów się na serwis bez wychodzenia z domu</h2>
                             </div>
                             <div class="flex flex-col items-start w-full space-y-3">
                                 <p class="text-sm md:text-base relative pl-6">
@@ -53,12 +53,12 @@
                 </div>  
                 </div>
                 </div>
-                    <h1 class="flex justify-center p-4 items-center text-2xl md:text-2xl font-bold mt-4 text-black">
+                    <h1 class="flex justify-center bg-transparent p-4 items-center text-2xl md:text-2xl font-bold mt-4 mb-4 text-black">
                         Usługi, które oferujemy
                     </h1>
                     <!-- Naprawa Service -->
                      <div class="flex flex-col md:flex-row">
-                    <span class="flex flex-col md:flex-row items-center rounded-xl m-4 p-4 bg-white shadow-md flex-grow">
+                    <span class="flex flex-col md:flex-row items-center rounded-xl mb-4 mx-4 p-4 bg-white shadow-md flex-grow">
                         <img src="../../assets/icons/naprawa1.png" class="w-16 h-16 md:w-24 md:h-24"/>
                         <div class="flex flex-col space-y-3 ml-0 md:ml-4 mt-4 md:mt-0">
                             <div class="flex flex-row justify-between w-full">
@@ -66,6 +66,8 @@
                                 <p class="text-lg md:text-xl">od 10zl</p>
                             </div>
                             <p class="text-gray-800 text-sm md:text-base">Naprawimy Twój rower lub rower elektryczny szybko i tanio</p>
+                            <hr>
+                            <p class="text-gray-700 text-sm md:text-base">250w-3000w</p>
                         </div>                
                     </span>
                     
@@ -99,11 +101,13 @@
                 </div>
                 </div>
             </div>
-            
-            <!-- Selling Section Title -->
-            <h1 class="flex justify-center p-4 items-center text-2xl md:text-2xl font-bold text-black">
+            <div class="bg-[#e6e1e1]">
+                <h1 class="flex justify-center bg-white/70 p-4 items-center text-2xl md:text-2xl font-bold text-black">
                 Sprzedajemy
-            </h1>
+                </h1>
+            </div>
+            <!-- Selling Section Title -->
+        
             
             <!-- Selling Section -->
             <div class="flex flex-col w-full text-black z-100 relative bg-white/70 p-4">
@@ -147,10 +151,9 @@
 
 <script setup lang="ts">
 import { useToast } from 'primevue/usetoast';
+import { phoneNumber, name } from "../../vars";
 
 const toast = useToast();
-
-const phoneNumber = '+48 575 525 279';
 
 const copyPhoneNumber = async () => {
     await navigator.clipboard.writeText(phoneNumber);

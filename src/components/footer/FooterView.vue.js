@@ -1,3 +1,4 @@
+import { name, phoneNumber, address } from "../../vars";
 const { defineProps, defineSlots, defineEmits, defineExpose, defineModel, defineOptions, withDefaults, } = await import('vue');
 const __VLS_fnComponent = (await import('vue')).defineComponent({});
 ;
@@ -22,14 +23,17 @@ function __VLS_template() {
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex items-center justify-center space-x-3 w-full") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.i, __VLS_intrinsicElements.i)({ ...{ class: ("fas fa-map-marker-alt") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-base md:text-lg") }, });
+    (__VLS_ctx.address);
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex items-center justify-center space-x-3 w-full") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.i, __VLS_intrinsicElements.i)({ ...{ class: ("pi pi-phone text-lg md:text-xl") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-base md:text-lg") }, });
+    (__VLS_ctx.phoneNumber);
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex items-center justify-center space-x-3 w-full") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-base md:text-lg") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.hr, __VLS_intrinsicElements.hr)({ ...{ style: ({}) }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.div, __VLS_intrinsicElements.div)({ ...{ class: ("flex flex-col items-center w-full p-4") }, });
     __VLS_elementAsFunction(__VLS_intrinsicElements.p, __VLS_intrinsicElements.p)({ ...{ class: ("text-xl font-bold") }, });
+    (__VLS_ctx.name);
     __VLS_styleScopedClasses['z-1000'];
     __VLS_styleScopedClasses['flex'];
     __VLS_styleScopedClasses['flex-col'];
@@ -90,7 +94,11 @@ function __VLS_template() {
 ;
 const __VLS_self = (await import('vue')).defineComponent({
     setup() {
-        return {};
+        return {
+            name: name,
+            phoneNumber: phoneNumber,
+            address: address,
+        };
     },
 });
 export default (await import('vue')).defineComponent({
